@@ -17,9 +17,9 @@ import org.springframework.data.annotation.Id;
 public class Level{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long LevelId;
-    private String LevelName;
-    private String description;
+    private long levelId;
+    private String levelName;
+    private String levelDescription;
 
 
 }
