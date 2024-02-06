@@ -12,10 +12,9 @@ import org.springframework.data.annotation.Id;
 
 @Entity
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 @Table (name = "level")
-public class Level {
+public class Level{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long LevelId;

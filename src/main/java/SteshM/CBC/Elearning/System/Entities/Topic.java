@@ -5,15 +5,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
 @Data
+@Entity
+@AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "subject")
-public class Subject {
+@Table(name = "topic")
+public class Topic {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long subjectId;
-    private String subjectName;
-    private String subjectDescription;
+    private long topicId;
+    private String topicName;
+    private String topicDescription;
 }
-
