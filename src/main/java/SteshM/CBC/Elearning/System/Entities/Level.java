@@ -1,5 +1,6 @@
 package SteshM.CBC.Elearning.System.Entities;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Table;
@@ -9,7 +10,7 @@ import lombok.NoArgsConstructor;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.annotation.Id;
 
-@EntityScan
+@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -17,7 +18,9 @@ import org.springframework.data.annotation.Id;
 public class Level {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int levelId;
+    private long LevelId;
     private String LevelName;
     private String description;
+
+
 }
