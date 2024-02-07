@@ -1,4 +1,7 @@
 package SteshM.CBC.Elearning.System.Repos;
 
-public class UserTypeRepo {
+import SteshM.CBC.Elearning.System.Entities.UserType;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserTypeRepo extends JpaRepository<UserType, Long> {
 }
