@@ -5,5 +5,6 @@ import lombok.Data;
 @Data
 
 public class UserTypedto {
-    private String userTypeName;
+   private long userTypeId;
+   private String userTypeName;
 }
