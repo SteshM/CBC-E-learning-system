@@ -15,5 +15,5 @@ public class Topic {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long topicId;
     private String topicName;
-    private String topicDescription;
+
 }
