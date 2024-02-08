@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 
-public class UserTypedto {
+public class UserTypeDTO {
    private long userTypeId;
    private String userTypeName;
 }

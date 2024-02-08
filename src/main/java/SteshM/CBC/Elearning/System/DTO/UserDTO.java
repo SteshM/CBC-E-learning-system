@@ -3,7 +3,7 @@ package SteshM.CBC.Elearning.System.DTO;
 import lombok.Data;
 
 @Data
-public class Userdto {
+public class UserDTO {
     private String name;
     private String email;
     private  String password;
