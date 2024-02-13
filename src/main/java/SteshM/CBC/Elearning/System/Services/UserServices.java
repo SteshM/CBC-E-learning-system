@@ -9,13 +9,14 @@ import SteshM.CBC.Elearning.System.Repos.UserRepo;
 import SteshM.CBC.Elearning.System.utilities.Utilities;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-@RequiredArgsConstructor
 @Slf4j
 public class UserServices {
-    private  final UserRepo userRepo;
+    @Autowired
+     UserRepo userRepo;
     public ResponseDTO register(UserDTO userDTO) {
         User user = new User();
         user.setName(userDTO.getName());

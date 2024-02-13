@@ -14,8 +14,6 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
     @Autowired
     UserServices userServices;
-    @Autowired
-    UserRepo userRepo;
     @GetMapping ("/hello")
     public String welcome(){
         return "hello enjoy our services!";
